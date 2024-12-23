@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+</head>
+<body>
+
+    <!-- Button to change background color -->
+    <button onclick="changeBackgroundColor()">Change Background Color</button>
+
+    <script>
+        // Function to generate a random color and change the background
+        function changeBackgroundColor() {
+            // Generate a random color in hex format
+            const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            // Change the background color of the page
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+
+</body>
+</html>
